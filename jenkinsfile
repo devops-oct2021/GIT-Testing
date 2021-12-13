@@ -28,20 +28,7 @@ pipeline
             steps{sh "echo deploy-to-QA env"}
         }
 
-
-
-        }
     }
-    
-    
+    }
 
-
-
-
-
-
-
-
-
-
-}
+    }
