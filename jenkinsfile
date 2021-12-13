@@ -17,6 +17,10 @@ pipeline
         {
             steps{sh "echo deploy-to dev-env"}
         }
+        stage ("deploy package to qa env")
+        {
+            steps{sh "echo deploy-to-qa-env"}
+        }
 
     }
     }
