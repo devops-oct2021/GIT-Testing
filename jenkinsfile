@@ -18,12 +18,7 @@ pipeline
             steps{sh "echo deploy-to dev-env"}
         }
 
-        stage (QA manager approval reuired)
-        {
-            staps{ sh "input approval required from QA team manager" }
-        }
-
-        stage ("deploy to QA env")
+         stage ("deploy to QA env")
         {
             steps{sh "echo deploy-to-QA env"}
         }
