@@ -1,0 +1,45 @@
+pipeline
+{
+    agent any
+    stages
+    {
+        stage ("scm checkout")
+        
+        {steps {sh "echo code-is-downloading"}
+        }
+
+        stage("create deployable package")
+        {
+            steps{sh "echo create package"}
+        }
+
+        stage ("deploy package to dev env")
+        {
+            steps{sh "echo deploy-to dev-env"}
+        }
+
+        stage (QA manager approval reuired)
+        {
+            staps{ sh "input approval required from QA team manager" }
+        }
+
+        stage ("deploy to QA env")
+        {
+            steps{sh "echo deploy-to-QA env"}
+        }
+
+
+
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+}
